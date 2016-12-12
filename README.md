@@ -14,3 +14,8 @@ Adicione uma div a pagina utilizando a diretiva `loading-status-message`
 ```html
 <div loading-status-message time-request="30" class="modal" style="position:fixed; display:none;">Aguarde...</div>
 ```
+
+### Attributes
+
+| option | description | value | default |
+|---|---|---|---|
