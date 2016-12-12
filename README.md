@@ -14,6 +14,18 @@ Adicione uma div a pagina utilizando a diretiva `loading-status-message`
 ```html
 <div loading-status-message time-request="30" class="modal" style="position:fixed; display:none;">Aguarde...</div>
 ```
+Para cada pagina do UauWeb é recomendado ter uma camada de serviços. É necessário injetar no serviço que deve ser interceptado a seguinte  dependência `loadingStatus`
+```javascript
+var appService = angular.module('myService', ['restangular', 'loadingStatus']);
+```
+
+Adicionar a seguinte configuração no serviço a ser interceptado
+```javascript
+    appService.config(function (RestangularProvider) {
+        //set the base url for api calls on our RESTful services
+        RestangularProvider.setDefaultHeaders({ 'intercept': true });
+    });
+```
 
 ### Attributes
 
