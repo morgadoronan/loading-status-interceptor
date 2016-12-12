@@ -31,3 +31,4 @@ Adicionar a seguinte configuração no serviço a ser interceptado
 
 | option | description | value | default |
 |---|---|---|---|
+| `close-on-select` | Closes a multi-select upon selection | boolean | true |
