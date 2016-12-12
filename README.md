@@ -10,6 +10,6 @@ Inclua os arquivos abaixo na sua página
 <script src="<%=ResolveUrl("~/")%>UAUComponente/lib/loadingStatusDirective.js"></script>
 
 Adicione uma div a pagina utilizando a diretiva `loading-status-message`
-```html
+```javascript
 <div loading-status-message time-request="30" class="modal" style="position:fixed; display:none;">Aguarde...</div>
 ```
