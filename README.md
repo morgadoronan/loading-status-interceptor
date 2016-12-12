@@ -1,4 +1,5 @@
 # loading-status-interceptor
+loading-status-interceptor intersepta chamadas Ajax da pagina e aplica um bloqueio.
 
 ## Instalação
 
