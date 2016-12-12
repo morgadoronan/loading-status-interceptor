@@ -22,13 +22,13 @@ var appService = angular.module('myService', ['restangular', 'loadingStatus']);
 Adicionar a seguinte configuração no serviço a ser interceptado
 ```javascript
     appService.config(function (RestangularProvider) {
-        //set the base url for api calls on our RESTful services
+        //Adciona o parâmetro no Headers
         RestangularProvider.setDefaultHeaders({ 'intercept': true });
     });
 ```
 
 ### Attributes
 
-| option | description | value | default |
-|---|---|---|---|
-| `close-on-select` | Closes a multi-select upon selection | boolean | true |
+| Nome | Descrição |
+|---|---|
+| `time-request` | Tempo que a diretiva espera antes de bloquear a pagina |
